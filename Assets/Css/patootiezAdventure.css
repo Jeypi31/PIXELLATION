@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+  }
+
+  body {
+    background-image: url('../Images/zBackground3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(1, 130, 10),rgb(13, 128, 2));
+    padding: 40px 60px;
+    height: 60px;
+}
+
+.center-text {
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+}
+
+.shadow {
+  width: 20%;
+  max-width: 650ox;
+  background-color: rgba(2, 3, 3, 0.4);
+  color: white;
+  margin-top: 0%;
+  padding: 21px;
+  width: 100%;  
+}
+
+.button {
+  padding: 10px 40px;
+  font-size: 18px;
+  background-color: #333;
+  color: #ffffff;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  left: 5%;
+  z-index: 1;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: unset;
+  padding: .8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 900;
+  transition: all 0.7s cubic-bezier(0,.8,.26,.99);
+}
+
+
+.button:before {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  transition: .7s cubic-bezier(0,.8,.26,.99);
+  z-index: -1;
+  background-color:  rgb(54, 54, 54)!important;
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+.button:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  transition: .7s cubic-bezier(0,.8,.26,.99);
+}
+
+.button:hover:before {
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+.button:hover:after {
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+.button:active:after {
+  box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+}
+
+/* Initially hide the button */
+.button {
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+  animation: fadeIn 1s 1s forwards; /* Fade-in animation starts after 3 seconds */
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduce opacity slightly on hover */
+}
+
+.movebutton {
+  padding-left: 42%;
+  padding-top: 8%;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Starts transparent */
+  }
+  to {
+      opacity: 1; /* Ends opaque */
+  }
+}
+ 
+
+.button2 {
+  padding: 10px 40px;
+  font-size: 18px;
+  background-color: #333;
+  color: #ffffff;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  left: -5%;
+  z-index: 1;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: unset;
+  padding: .8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 900;
+  transition: all 0.7s cubic-bezier(0,.8,.26,.99);
+}
+
+
+.button2:before {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  transition: .7s cubic-bezier(0,.8,.26,.99);
+  z-index: -1;
+  background-color:  rgb(54, 54, 54)!important;
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+.button2:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  transition: .7s cubic-bezier(0,.8,.26,.99);
+}
+
+.button2:hover:before {
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+.button2:hover:after {
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+}
+
+.button2:active {
+  transform: translateY(4px);
+}
+
+.button2:active:after {
+  box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+}
+
+/* Initially hide the button */
+.button2 {
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+  animation: fadeIn 1s 1s forwards; /* Fade-in animation starts after 3 seconds */
+}
+
+.button2:hover {
+  opacity: 0.8; /* Reduce opacity slightly on hover */
+}
+
+.movebutton {
+  padding-left: 42%;
+  padding-top: 8%;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Starts transparent */
+  }
+  to {
+      opacity: 1; /* Ends opaque */
+  }
+}
+
+
+.minecraft-box {
+  color: white;
+  position: absolute;
+  margin-left: 34%;
+  margin-top: 1%;
+  width: 270px;
+  height: 450px;
+  background-image: linear-gradient(rgb(0, 83, 11), rgb(2, 102, 7));
+  border-radius: 5%;
+  box-shadow: 5px 8px 8px 5px #000000;
+  padding-top: 2%;
+  padding: 1%;
+}
+
+.terarria{
+  color: white;
+  position: absolute;
+  margin-left: -4%;
+  margin-top: 1%;
+  width: 270px;
+  height: 450px;
+  background-image: linear-gradient(rgb(0, 83, 11), rgb(2, 102, 7));
+  border-radius: 5%;
+  box-shadow: 5px 8px 8px 5px #000000;
+  padding-top: 2%;
+  padding: 1%;
+}
+
+.stardew {
+  color: white;
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 6%;
+  width: 270px;
+  height: 450px;
+  background-image: linear-gradient(rgb(9, 255, 0), rgb(19, 73, 2));
+  border-radius: 5%;
+  box-shadow: 5px 8px 8px 5px #000000;
+  padding-top: 2%;
+  padding: 1%;
+}
+
+
+
+.boxx {
+  margin-top: 1%;
+  margin-left: 25%;
+  align-items: center;
+}
+
+.containerx {
+  background-image: linear-gradient(rgb(0, 53, 7), rgb(2, 50, 0));
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(7, 192, 1),
+                0px 0px 10px rgb(23, 192, 1);
+}
+.titlex {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.bulletx {
+  margin-bottom: 10px;
+}
+.bullet-textx {
+  display: inline-block;
+  margin-right: 10px;
+}
+.buttonx {
+  padding: 5px 10px;
+  background-color: #82ff86;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonx:hover {
+  background-color: #04ff10;
+}
+
+.boxx9 {
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(rgb(0, 83, 14), rgb(0, 255, 42));
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px rgb(1, 192, 17),
+                0px 0px 10px rgb(1, 192, 17);
+  padding-top: 2%;
+  padding: 1%;
+}
+
+@media (max-width:767px){
+
+  .minecraft-box {
+    color: white;
+    position: relative;
+    margin-left: -4%;
+    margin-top: 5%;
+    width: 270px;
+    height: 450px;
+    background-image: linear-gradient(rgb(0, 83, 11), rgba(2, 102, 7, 0.493));
+    border-radius: 5%;
+    box-shadow: 5px 8px 8px 5px #000000;
+    padding-top: 2%;
+    padding: 1%;
+  }
+  
+  .terarria{
+    color: white;
+    position: relative;
+    margin-left: -4%;
+    margin-top: 5%;
+    width: 270px;
+    height: 450px;
+    background-image: linear-gradient(rgb(0, 83, 11), rgba(2, 102, 7, 0.493));
+    border-radius: 5%;
+    box-shadow: 5px 8px 8px 5px #000000;
+    padding-top: 2%;
+    padding: 1%;
+  }
+  
+  .stardew {
+    color: white;
+    position: relative;
+    margin-left: -4%;
+    margin-top: 5%;
+    width: 270px;
+    height: 450px;
+    background-image: linear-gradient(rgb(9, 255, 0), rgb(19, 73, 2));
+    border-radius: 5%;
+    box-shadow: 5px 8px 8px 5px #000000;
+    padding-top: 2%;
+    padding: 1%;
+  }
+  
+}
